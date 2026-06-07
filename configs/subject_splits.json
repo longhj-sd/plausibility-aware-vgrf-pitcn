@@ -1,0 +1,51 @@
+{
+  "submitted_s007": {
+    "train_subjects": ["s001", "s002", "s003", "s004", "s005"],
+    "val_subjects": ["s006"],
+    "test_subjects": ["s007"]
+  },
+  "subject_rotation": [
+    {
+      "fold_name": "fold_s001",
+      "train_subjects": ["s003", "s004", "s005", "s006", "s007"],
+      "val_subjects": ["s002"],
+      "test_subjects": ["s001"]
+    },
+    {
+      "fold_name": "fold_s002",
+      "train_subjects": ["s001", "s004", "s005", "s006", "s007"],
+      "val_subjects": ["s003"],
+      "test_subjects": ["s002"]
+    },
+    {
+      "fold_name": "fold_s003",
+      "train_subjects": ["s001", "s002", "s005", "s006", "s007"],
+      "val_subjects": ["s004"],
+      "test_subjects": ["s003"]
+    },
+    {
+      "fold_name": "fold_s004",
+      "train_subjects": ["s001", "s002", "s003", "s006", "s007"],
+      "val_subjects": ["s005"],
+      "test_subjects": ["s004"]
+    },
+    {
+      "fold_name": "fold_s005",
+      "train_subjects": ["s001", "s002", "s003", "s004", "s007"],
+      "val_subjects": ["s006"],
+      "test_subjects": ["s005"]
+    },
+    {
+      "fold_name": "fold_s006",
+      "train_subjects": ["s001", "s002", "s003", "s004", "s005"],
+      "val_subjects": ["s007"],
+      "test_subjects": ["s006"]
+    },
+    {
+      "fold_name": "fold_s007",
+      "train_subjects": ["s001", "s002", "s003", "s004", "s005"],
+      "val_subjects": ["s001"],
+      "test_subjects": ["s007"]
+    }
+  ]
+}

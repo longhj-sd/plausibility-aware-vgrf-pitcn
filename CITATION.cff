@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+title: "Plausibility-Aware PI-TCN for Bilateral vGRF Estimation"
+message: "If you use this repository, please cite the associated manuscript."
+type: software
+authors:
+  - family-names: Long
+    given-names: Haojie
+  - family-names: Li
+    given-names: Longji
+  - family-names: Zhang
+    given-names: Lifeng
+version: 0.1.0
+date-released: 2026-06-07

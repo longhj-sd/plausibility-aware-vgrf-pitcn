@@ -1,0 +1,43 @@
+project:
+  name: plausibility-aware-vgrf-pitcn
+  manuscript_title: "Plausibility-Aware Physics-Informed Temporal Convolutional Modeling for Bilateral Vertical Ground Reaction Force Estimation"
+
+paths:
+  force_dir: data/raw/force
+  moshpp_dir: data/raw/moshpp
+  matched_csv: outputs/tables/matched_groundlink_files.csv
+  processed_dataset: data/processed/groundlink_vgrf_windows_uncompressed.npz
+  window_metadata_csv: outputs/tables/groundlink_window_metadata.csv
+  output_root: outputs/revision_evidence
+  prediction_dir: outputs/revision_evidence/final_audit/predictions
+  downstream_dir: outputs/revision_evidence/final_audit/downstream_metrics
+
+splits:
+  train_subjects: [s001, s002, s003, s004, s005]
+  val_subjects: [s006]
+  test_subjects: [s007]
+  rotation_subjects: [s001, s002, s003, s004, s005, s006, s007]
+
+windowing:
+  window_size: 120
+  stride: 30
+
+training:
+  epochs: 50
+  patience: 10
+  batch_size: 32
+  learning_rate: 0.001
+  hidden_channels: 128
+  num_blocks: 5
+  dropout: 0.1
+  seed: 7
+
+physics_regularization:
+  lambda_nonneg: 0.1
+  lambda_contact: 0.1
+  lambda_smooth: 0.01
+  contact_threshold: 0.05
+
+evaluation:
+  batch_size: 64
+  spike_threshold: 0.5

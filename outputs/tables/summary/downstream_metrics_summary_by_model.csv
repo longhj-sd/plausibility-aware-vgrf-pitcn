@@ -1,0 +1,3 @@
+analysis,model,n_windows_channels,contact_time_absolute_error_mean,contact_time_absolute_error_median,contact_time_absolute_error_sd,peak_absolute_error_mean,peak_absolute_error_median,peak_absolute_error_sd,impulse_absolute_error_mean,impulse_absolute_error_median,impulse_absolute_error_sd,loading_rate_absolute_error_mean,loading_rate_absolute_error_median,loading_rate_absolute_error_sd
+subject_rotation,pi_tcn_full,94260,10.845777636325058,0.0,28.009602034763443,0.12070238120804894,0.07232358306646347,0.14100982751678215,,,,,,
+subject_rotation,tcn,94260,11.387598132824104,0.0,29.29298544350934,0.12460025952085173,0.07863175868988037,0.14271003464133653,,,,,,
